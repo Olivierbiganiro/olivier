@@ -1,29 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>home</title>
-    <style>
-        label1{
-            font-size: 40px;
-            font-style: italic;
-            align: center;
-            color: #1b6b80;
-        }
-
-    </style>
 </head>
 <body>
-<label1>
-    {% if user.is_authenticated %}
-<span >hello, {{ request.user }}  welcome </span>
-<span><a href="{% url 'logoutsite' %}">logout</a> </span>
-    {% endif %}
-</label1>
-<h1>welcome</h1>
-<button type="submit"><a href="/andika"> signup</a></button>
-{% for n in movie%}
-<h2>{{n.title}}</h2>
-{%endfor%}
+<hello>
 </body>
 </html>
